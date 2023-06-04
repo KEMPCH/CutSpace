@@ -1,0 +1,24 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #323232;
+}
+
+//////////////////////////////////////////
+
+.page {
+  flex: 1 1 auto;
+}
+.page {
+  &__main-block {
+  }
+}
+//////////////////////////////////////////
+
+[class*="__container"] {
+  max-width: 69.1875em;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
