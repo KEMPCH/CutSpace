@@ -47,5 +47,8 @@
     &:hover {
       color: $accent-color;
     }
+    @media (max-width: 48.3113em) {
+      font-size: 1.25rem;
+    }
   }
 }
