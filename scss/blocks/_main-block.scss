@@ -7,6 +7,13 @@
     display: flex;
     align-items: center;
     padding-top: 112px;
+    justify-content: space-between;
+    @media (max-width: 53.75em) {
+      display: block;
+    }
+    @media (max-width: 21.25rem) {
+      padding-top: 135px;
+    }
   }
   &__content {
     flex: 0 1 51.22%;
@@ -22,6 +29,27 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+    @media (max-width: 70.25em) {
+      font-size: 3rem;
+    }
+    @media (max-width: 61.9988em) {
+      font-size: 2.7rem;
+    }
+    @media (max-width: 55.5em) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 53.75em) {
+      margin-right: 0px;
+      &:not(:last-child) {
+        margin: 0px 0px 5px 0px;
+      }
+    }
+    @media (max-width: 31.25em) {
+      font-size: 2rem;
+    }
+    @media (max-width: 25rem) {
+      font-size: 1.8rem;
+    }
   }
   &__text {
     font-weight: 400;
@@ -31,14 +59,31 @@
     &:not(:last-child) {
       margin: 0px 0px 42px 0px;
     }
+    @media (max-width: 53.75em) {
+      &:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+    @media (max-width: 28.75em) {
+      &:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+      }
+    }
   }
   &__form {
     display: flex;
+    @media (max-width: 28.75em) {
+      display: block;
+    }
   }
   &__image {
     position: relative;
     flex: 0 1 48.78%;
     padding-bottom: 60.704607%; /* 672/1107 */
+    @media (max-width: 53.75em) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
     img {
       position: absolute;
       width: 100%;
@@ -51,19 +96,36 @@
   }
 }
 .form-main-block {
+  max-width: 459px;
   justify-content: space-between;
-  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
-  border-radius: 29px;
   background: url("../../img/main-block/icon/Icon.svg") 28px 19px no-repeat;
+  @media (max-width: 53.75em) {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 28.75em) {
+    margin-bottom: 15px;
+  }
   &__input {
     line-height: 1.5;
     padding-left: 72px;
     background-color: transparent;
+    height: 58px;
+    width: 100%;
+    flex: 1 1 auto;
+    box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+    border-radius: 29px;
+    @media (max-width: 28.75em) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
     ::placeholder {
       color: #bbbbbb;
     }
   }
   &__button {
+    margin-left: -75px;
     border-radius: 29px;
     background-color: $accent-color;
     font-weight: 700;
@@ -77,7 +139,11 @@
     text-align: center;
     transition: all 0.3s ease 0s;
     &:hover {
-      background-color: #cd5c0c;
+      background-color: $accent-color-hover;
+    }
+    @media (max-width: 28.75em) {
+      width: 100%;
+      margin-left: 0px;
     }
   }
 }

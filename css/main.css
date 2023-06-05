@@ -100,12 +100,21 @@ body {
   color: #323232;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-
 [class*=__container] {
   max-width: 69.1875em;
   margin: 0 auto;
@@ -187,6 +196,11 @@ body {
 .menu__link:hover {
   color: #f78434;
 }
+@media (max-width: 48.3113em) {
+  .menu__link {
+    font-size: 1.25rem;
+  }
+}
 
 .main-block__container {
   display: -webkit-box;
@@ -196,6 +210,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 112px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 53.75em) {
+  .main-block__container {
+    display: block;
+  }
+}
+@media (max-width: 21.25rem) {
+  .main-block__container {
+    padding-top: 135px;
+  }
 }
 .main-block__content {
   -webkit-box-flex: 0;
@@ -214,6 +241,39 @@ body {
 .main-block__title:not(:last-child) {
   margin-bottom: 25px;
 }
+@media (max-width: 70.25em) {
+  .main-block__title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 61.9988em) {
+  .main-block__title {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 55.5em) {
+  .main-block__title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 53.75em) {
+  .main-block__title {
+    margin-right: 0px;
+  }
+  .main-block__title:not(:last-child) {
+    margin: 0px 0px 5px 0px;
+  }
+}
+@media (max-width: 31.25em) {
+  .main-block__title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 25rem) {
+  .main-block__title {
+    font-size: 1.8rem;
+  }
+}
 .main-block__text {
   font-weight: 400;
   line-height: 1.69;
@@ -223,10 +283,25 @@ body {
 .main-block__text:not(:last-child) {
   margin: 0px 0px 42px 0px;
 }
+@media (max-width: 53.75em) {
+  .main-block__text:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media (max-width: 28.75em) {
+  .main-block__text:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+}
 .main-block__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 28.75em) {
+  .main-block__form {
+    display: block;
+  }
 }
 .main-block__image {
   position: relative;
@@ -234,6 +309,12 @@ body {
       -ms-flex: 0 1 48.78%;
           flex: 0 1 48.78%;
   padding-bottom: 60.704607%; /* 672/1107 */
+}
+@media (max-width: 53.75em) {
+  .main-block__image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 .main-block__image img {
   position: absolute;
@@ -247,18 +328,40 @@ body {
 }
 
 .form-main-block {
+  max-width: 459px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
-  border-radius: 29px;
   background: url("../../img/main-block/icon/Icon.svg") 28px 19px no-repeat;
+}
+@media (max-width: 53.75em) {
+  .form-main-block {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 28.75em) {
+  .form-main-block {
+    margin-bottom: 15px;
+  }
 }
 .form-main-block__input {
   line-height: 1.5;
   padding-left: 72px;
   background-color: transparent;
+  height: 58px;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+}
+@media (max-width: 28.75em) {
+  .form-main-block__input:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .form-main-block__input ::-webkit-input-placeholder {
   color: #bbbbbb;
@@ -276,6 +379,7 @@ body {
   color: #bbbbbb;
 }
 .form-main-block__button {
+  margin-left: -75px;
   border-radius: 29px;
   background-color: #f78434;
   font-weight: 700;
@@ -299,4 +403,10 @@ body {
 }
 .form-main-block__button:hover {
   background-color: #cd5c0c;
+}
+@media (max-width: 28.75em) {
+  .form-main-block__button {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
