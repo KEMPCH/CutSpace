@@ -40,6 +40,7 @@
   &__link {
     line-height: 1.5;
     color: inherit;
+    transition: all 0.2s ease 0s;
     &--active {
       color: $accent-color;
       font-weight: 700;

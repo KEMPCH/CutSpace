@@ -1,0 +1,19 @@
+.sponsors {
+  padding-bottom: 91px;
+  @include padding-adaptive-mixin;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 25px;
+    @media (max-width: 46.0613em) {
+      justify-content: center;
+      column-gap: 45px;
+    }
+    @media (max-width: 29.2488em) {
+      row-gap: 15px;
+    }
+  }
+}

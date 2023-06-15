@@ -1,0 +1,18 @@
+// Global
+@import "global/reset";
+@import "global/vars";
+@import "global/mixins";
+@import "global/base";
+
+// Common
+@import "common/title";
+@import "common/button";
+
+// Blocks
+@import "blocks/header";
+@import "blocks/main-block";
+@import "blocks/sponsors";
+@import "blocks/weprovide";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");

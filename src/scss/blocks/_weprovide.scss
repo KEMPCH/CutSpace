@@ -1,0 +1,41 @@
+.weprovide {
+  padding-bottom: 154px;
+  @include padding-adaptive-mixin;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images {
+    flex: 0 1 50.95%;
+    display: flex;
+    gap: 32.35px;
+    margin-left: -254px;
+    img {
+      border-radius: 20px;
+      &:last-child {
+        border-radius: 20px 20px 0px 20px;
+      }
+    }
+  }
+  &__content {
+    padding: 68px 0px 58px 0px;
+    flex: 0 1 49.05%;
+    max-width: 374px;
+  }
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    letter-spacing: 1.15px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    > p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__button {
+  }
+}

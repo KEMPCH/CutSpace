@@ -1,0 +1,11 @@
+@mixin padding-adaptive-mixin {
+  @media (max-width: 61.9988em) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 47.9988em) {
+    padding-bottom: 45px;
+  }
+  @media (max-width: 29.2488em) {
+    padding-bottom: 25px;
+  }
+}
