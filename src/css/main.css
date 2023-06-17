@@ -123,7 +123,6 @@ body {
   padding: 0px 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  overflow: hidden;
 }
 
 .title {
@@ -131,6 +130,21 @@ body {
   font-size: 2.625rem;
   line-height: 1.48;
   letter-spacing: 0.8px;
+}
+@media (max-width: 53.5625em) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 25rem) {
+  .title {
+    font-size: 1.8rem;
+  }
 }
 
 .button {
@@ -549,32 +563,57 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+}
+@media (max-width: 53.5625em) {
+  .weprovide__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .weprovide__images {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50.95%;
-          flex: 0 1 50.95%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32.35px;
-  margin-left: -254px;
+  margin-left: -239px;
 }
-.weprovide__images img {
-  border-radius: 20px;
-}
-.weprovide__images img:last-child {
-  border-radius: 20px 20px 0px 20px;
+@media (max-width: 53.5625em) {
+  .weprovide__images {
+    margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .weprovide__content {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding: 68px 0px 58px 0px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 49.05%;
-          flex: 0 1 49.05%;
   max-width: 374px;
+}
+@media (max-width: 53.5625em) {
+  .weprovide__content {
+    padding: 0;
+    max-width: none;
+  }
 }
 .weprovide__title:not(:last-child) {
   margin-bottom: 20px;
+}
+@media (max-width: 53.5625em) {
+  .weprovide__title:not(:last-child) {
+    margin: 0px 0px 5px 0px;
+  }
 }
 .weprovide__text {
   letter-spacing: 1.15px;
@@ -582,6 +621,92 @@ body {
 .weprovide__text:not(:last-child) {
   margin-bottom: 40px;
 }
+@media (max-width: 53.5625em) {
+  .weprovide__text:not(:last-child):not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .weprovide__text > p:not(:last-child) {
   margin-bottom: 20px;
+}
+@media (max-width: 53.5625em) {
+  .weprovide__text > p:not(:last-child):not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 53.5625em) {
+  .weprovide__button {
+    margin-bottom: 25px;
+  }
+}
+
+.images-weprovide {
+  gap: 32.35px;
+}
+@media (max-width: 50em) {
+  .images-weprovide {
+    gap: 20px;
+  }
+}
+@media (max-width: 50em) {
+  .images-weprovide {
+    gap: 10px;
+  }
+}
+@media (max-width: 25em) {
+  .images-weprovide {
+    gap: 5px;
+  }
+}
+.images-weprovide__item {
+  width: 385px;
+  position: relative;
+}
+.images-weprovide__item img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.images-weprovide__item:last-child img {
+  border-radius: 20px 20px 0px 20px;
+}
+.info-images-weprovide {
+  position: absolute;
+  bottom: 15.818182%; /* 87/550 */
+  right: -11.979275%; /* -46.24px/386 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  padding: 32px 29px;
+  gap: 20px;
+  min-height: 141px;
+}
+@media (max-width: 51.875em) {
+  .info-images-weprovide {
+    display: none;
+  }
+}
+.info-images-weprovide__icon img {
+  height: 45px;
+  width: 45px;
+}
+.content-info-images-weprovide {
+  max-width: 177px;
+}
+.content-info-images-weprovide__title {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+.content-info-images-weprovide__text {
+  letter-spacing: 1.15px;
 }
