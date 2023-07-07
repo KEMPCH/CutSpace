@@ -173,6 +173,14 @@ body {
 .button:hover {
   background-color: #cd5c0c;
 }
+.button--white {
+  background-color: #fff;
+  color: #000;
+}
+.button--white:hover {
+  background-color: #000;
+  color: white;
+}
 
 .header {
   position: absolute;
@@ -348,6 +356,11 @@ body {
 }
 .main-block__body {
   margin-right: 15px;
+}
+@media (max-width: 53.75em) {
+  .main-block__body {
+    margin-right: 0px;
+  }
 }
 .main-block__text {
   font-weight: 400;
@@ -626,6 +639,11 @@ body {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 28.75em) {
+  .weprovide__text:not(:last-child):not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+}
 .weprovide__text > p:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -637,6 +655,12 @@ body {
 @media (max-width: 53.5625em) {
   .weprovide__button {
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 28.75em) {
+  .weprovide__button {
+    margin-bottom: 15px;
+    max-width: none;
   }
 }
 
@@ -709,4 +733,82 @@ body {
 }
 .content-info-images-weprovide__text {
   letter-spacing: 1.15px;
+}
+
+.product__container {
+  padding: 59px 0px 0px 0px;
+  background: #58bebf;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 96px;
+  overflow: hidden;
+  position: relative;
+}
+.product__container::after {
+  content: "";
+  position: absolute;
+  width: 304px;
+  height: 304px;
+  top: -103px;
+  right: -78px;
+  background: url("../assets/img/product/decor/01.svg") no-repeat;
+}
+.product__container::before {
+  content: "";
+  position: absolute;
+  width: 304px;
+  height: 304px;
+  z-index: 2;
+  bottom: -203px;
+  left: 32.972973%; /* 366/1110 */
+  background: url("../assets/img/product/decor/02.svg") no-repeat;
+}
+.product__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50.09009%;
+          flex: 0 1 50.09009%; /* 556/1110 */
+}
+.product__image img {
+  border-radius: 0px 21.6px 0px 0px;
+}
+.product__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49.90991%;
+          flex: 0 1 49.90991%;
+}
+
+.content-product__title {
+  color: #fff;
+}
+.content-product__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+.content-product__text {
+  max-width: 320px;
+  color: #fff;
+}
+.content-product__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content-product__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.button--white {
+  position: relative;
+  padding: 10px 29px 10px 49px;
+}
+.button--white::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
+  top: 23px;
+  left: 30px;
+  background: url("../assets/img/product/Icon.svg") no-repeat;
 }

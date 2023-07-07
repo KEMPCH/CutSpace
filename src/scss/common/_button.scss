@@ -15,4 +15,12 @@
   &:hover {
     background-color: $accent-color-hover;
   }
+  &--white {
+    background-color: $primary-text-color;
+    color: #000;
+    &:hover {
+      background-color: #000;
+      color: white;
+    }
+  }
 }

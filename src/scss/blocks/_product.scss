@@ -1,0 +1,74 @@
+.product {
+  &__container {
+    padding: 59px 0px 0px 0px;
+    background: #58bebf;
+    border-radius: 20px;
+    display: flex;
+    gap: 96px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 304px;
+      height: 304px;
+      top: -103px;
+      right: -78px;
+      background: url("../assets/img/product/decor/01.svg") no-repeat;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 304px;
+      height: 304px;
+      z-index: 2;
+      bottom: -203px;
+      left: 32.972973%; /* 366/1110 */
+      background: url("../assets/img/product/decor/02.svg") no-repeat;
+    }
+  }
+  &__image {
+    flex: 0 1 50.09009%; /* 556/1110 */
+    img {
+      border-radius: 0px 21.6px 0px 0px;
+    }
+  }
+  &__content {
+    flex: 0 1 49.90991%;
+  }
+}
+.content-product {
+  &__title {
+    color: $primary-text-color;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    max-width: 320px;
+    color: $primary-text-color;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+  &__button {
+  }
+}
+.button--white {
+  position: relative;
+  padding: 10px 29px 10px 49px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 12px;
+    height: 12px;
+    top: 23px;
+    left: 30px;
+    background: url("../assets/img/product/Icon.svg") no-repeat;
+  }
+}
