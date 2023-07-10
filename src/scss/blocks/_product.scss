@@ -1,12 +1,24 @@
 .product {
+  padding-bottom: 144px;
+  @include padding-adaptive-mixin;
   &__container {
-    padding: 59px 0px 0px 0px;
+  }
+  &__body {
+    padding: 59px 15px 0px 0px;
     background: #58bebf;
     border-radius: 20px;
     display: flex;
-    gap: 96px;
+    column-gap: 96px;
+    flex-direction: row-reverse;
     overflow: hidden;
     position: relative;
+    @media (max-width: 68.125em) {
+      column-gap: 30px;
+    }
+    @media (max-width: 27.125em) {
+      padding-bottom: 15px;
+      padding-left: 15px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -29,12 +41,18 @@
   }
   &__image {
     flex: 0 1 50.09009%; /* 556/1110 */
+    @media (max-width: 27.125em) {
+      display: none;
+    }
     img {
       border-radius: 0px 21.6px 0px 0px;
     }
   }
   &__content {
     flex: 0 1 49.90991%;
+    @media (max-width: 27.125em) {
+      flex: 1 1 100%;
+    }
   }
 }
 .content-product {
@@ -51,11 +69,16 @@
       margin-bottom: 30px;
     }
   }
+  &__button {
+    width: 100%;
+  }
   &__buttons {
     display: flex;
-    gap: 20px;
-  }
-  &__button {
+    column-gap: 20px;
+    @media (max-width: 27.125em) {
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
   }
 }
 .button--white {

@@ -1,0 +1,42 @@
+.thanks {
+  &__container {
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+      margin-bottom: 58px;
+      @media (max-width: 56.25em) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 31.25em) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__title {
+    max-width: 470px;
+  }
+  &__text {
+    color: #606060;
+    line-height: 1.68;
+    letter-spacing: 1.15px;
+    max-width: 398px;
+  }
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    @media (max-width: 56.125em) {
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    @media (max-width: 759px) {
+      max-width: 450px;
+    }
+  }
+}

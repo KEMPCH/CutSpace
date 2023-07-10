@@ -1,0 +1,33 @@
+.choose {
+  padding-bottom: 171px;
+  @include padding-adaptive-mixin;
+  &__container {
+  }
+  &__title {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 58px;
+      @media (max-width: 56.25em) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 31.25em) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 30px;
+    @media (max-width: 67.625em) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 55.125em) {
+      column-gap: 90px;
+    }
+  }
+  &__item {
+  }
+}

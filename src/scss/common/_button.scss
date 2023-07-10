@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   font-weight: 700;
   line-height: 1.5;
   color: $primary-text-color;
@@ -10,7 +11,7 @@
   align-items: center;
   text-align: center;
   min-height: 58px;
-  max-width: 172px;
+  min-width: 172px;
   transition: all 0.3s ease 0s;
   &:hover {
     background-color: $accent-color-hover;

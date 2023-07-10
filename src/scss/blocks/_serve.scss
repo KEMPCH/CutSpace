@@ -1,0 +1,48 @@
+.serve {
+  padding-bottom: 113px;
+  @include padding-adaptive-mixin;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 704px;
+    z-index: -1;
+    background-color: #f5f6fa;
+    top: -60%;
+  }
+  &__container {
+  }
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+      @media (max-width: 56.25em) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 31.25em) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 70em) {
+      column-gap: 15px;
+    }
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+  &__card {
+  }
+}
