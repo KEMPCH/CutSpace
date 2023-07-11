@@ -1,0 +1,74 @@
+.footer {
+  padding: 91px 0px 82px 0px;
+  @include padding-adaptive-mixin;
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 30px;
+  }
+}
+.body-footer {
+  &__column {
+  }
+  &__logo {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    line-height: 1.68;
+    letter-spacing: 1.15px;
+    max-width: 300px;
+    @media (max-width: 59.9375em) {
+      max-width: none;
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__social {
+  }
+  &__menu {
+    display: flex;
+    column-gap: 85px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media (max-width: 38.125em) {
+      column-gap: 40px;
+    }
+    @media (max-width: 21.625em) {
+      column-gap: 20px;
+    }
+  }
+}
+.menu-footer {
+  &__column {
+  }
+  &__title {
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  &__list {
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+  &__link {
+    font-size: 0.875rem;
+    line-height: 1.92;
+    letter-spacing: 0.5px;
+  }
+}

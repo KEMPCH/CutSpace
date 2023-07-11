@@ -71,6 +71,9 @@
   }
   &__button {
     width: 100%;
+    @media (max-width: 27.125em) {
+      max-width: none;
+    }
   }
   &__buttons {
     display: flex;

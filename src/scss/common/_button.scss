@@ -6,12 +6,14 @@
   background-color: $accent-color;
   border-radius: 29px;
   padding: 10px 39px;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 58px;
   min-width: 172px;
+  max-width: 172px;
   transition: all 0.3s ease 0s;
   &:hover {
     background-color: $accent-color-hover;

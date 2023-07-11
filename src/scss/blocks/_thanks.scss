@@ -1,4 +1,6 @@
 .thanks {
+  padding-bottom: 42px;
+  @include padding-adaptive-mixin;
   &__container {
   }
   &__header {
