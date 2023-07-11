@@ -1,6 +1,15 @@
 .footer {
   padding: 91px 0px 82px 0px;
   @include padding-adaptive-mixin;
+  @media (max-width: 61.9988em) {
+    padding-top: 70px;
+  }
+  @media (max-width: 47.9988em) {
+    padding-top: 45px;
+  }
+  @media (max-width: 29.2488em) {
+    padding-top: 25px;
+  }
   &__container {
   }
   &__body {
